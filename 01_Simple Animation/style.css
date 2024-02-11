@@ -1,0 +1,30 @@
+.box {
+    width: 400px;
+    height: 400px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+
+    
+    /* animation-name: simple; */
+    /* animation-duration: 5s; */
+    /* animation-delay: 2s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-fill-mode: both; */
+    /* animation-iteration-count: 5; */
+
+    animation: simple 5s ease-in 0.5s;
+}
+
+@keyframes simple {
+    from {
+        background-color: orange;
+        color: black;
+    }
+    to {
+        background-color: green;
+        color: white;
+    }
+}
