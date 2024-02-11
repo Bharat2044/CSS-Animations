@@ -1,0 +1,55 @@
+.box {
+    width: 180px;
+    height: 60px;
+    color: #000000;
+    background-color: orange;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.anime {
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+
+    animation: move 10s 2s infinite alternate;
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+.ease {
+    animation-timing-function: ease;
+}
+.ease-in {
+    animation-timing-function: ease-in;
+}
+.ease-out {
+    animation-timing-function: ease-out;
+}
+.ease-in-out {
+    animation-timing-function: ease-in-out;
+}
+.custom {
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes move {
+    0% {
+        left: 0px;
+        top: 0px;
+        background-color: orange;
+    }
+    100% {
+        left: 300px;
+        top: 0px;
+        background-color: green;
+    }
+}
