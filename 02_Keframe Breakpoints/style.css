@@ -1,0 +1,44 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.anime {
+    /* animation-name: percentage;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+
+    animation: percentage 10s ease-in-out 1s 2 alternate backwards;
+}
+
+@keyframes percentage {
+    0% {
+        background-color: orange;
+    }
+    25% {
+        color: white;
+        background-color: green;
+    }
+    50% {
+        color: black;
+        background: grey;
+    }
+    75% {
+        color: black;
+        background-color: pink;
+    }
+    100% {
+        color: white;
+        background-color: red;
+    }
+}
