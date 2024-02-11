@@ -1,0 +1,87 @@
+.circle {
+    width: 160px;
+    height: 160px;
+    color: #000000;
+    background-color: orange;
+    padding: 40px;
+    border: 1px solid grey;
+    margin: 5px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+
+.multiple-h {
+    animation: move-h 3s linear infinite alternate, shape 3s ease-out infinite alternate;
+}
+
+.multiple-v {
+    animation: move-v 3s linear infinite alternate, shape 3s ease-out infinite alternate;
+}
+
+/* moving horizontally */
+@keyframes move-h {
+    0% {
+        left: 200px;
+        top: 0px;
+        background-color: orange;
+    }
+    25% {
+        left: 0px;
+        top: 0px;
+        color: white;
+        background-color: green;
+    }
+    50% {
+        left: 200px;
+        top: 0px;
+        color: black;
+        background-color: white;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        color: white;
+        background-color: red;
+    }
+}
+
+/* moving vertically */
+@keyframes move-v {    
+    0% {
+        left: 0px;
+        top: 0px;
+        color: red;
+        background-color: white;
+    }
+    25% {
+        left: 0px;
+        top: 200px;
+        color: black;
+        background-color: white;
+    }
+    50% {
+        left: 0px;
+        top: 0px;
+        color: white;
+        background-color: green;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        background-color: orange;
+    }
+}
+
+@keyframes shape {
+    0% {
+        transform: scale(.3);
+    }
+    25% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
